@@ -25,7 +25,8 @@ public class Login implements Filter {
         if (requestURI.contains("index.jsp") || requestURI.contains("/css/")
                 || requestURI.contains("/js/") || requestURI.contains("/lib/")
                 || requestURI.contains("/font/") || requestURI.contains("entry.jpg")
-                || requestURI.contains("entry") || requestURI.equals(request1.getContextPath() + "/")) {
+                || requestURI.contains("entry") || requestURI.equals(request1.getContextPath() + "/")
+                || requestURI.contains("favicon.ico")) {
             chain.doFilter(request1, response1);
         } else {
             if (session.getAttribute("managerName") != null) {

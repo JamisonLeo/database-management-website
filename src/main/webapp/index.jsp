@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <script src="lib/jQuery3.7.0/jquery-3.7.0.min.js"></script>
     <script src="js/md5.js"></script>
     <link rel="stylesheet" href="lib/bootstrap-3.4.1/css/bootstrap.min.css">
