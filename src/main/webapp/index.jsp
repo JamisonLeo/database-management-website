@@ -10,6 +10,7 @@
     <script src="js/md5.js"></script>
     <link rel="stylesheet" href="lib/bootstrap-3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/jsencrypt.js"></script>
     <script src="js/index.js"></script>
     <title>本地密码管理</title>
 </head>

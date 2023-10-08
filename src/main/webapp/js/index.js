@@ -47,6 +47,9 @@ function eyeExist() {
 }
 
 function checkForm() {
-    $("#md5-password").val(md5($("#password").val()));
+    const jsEncrypt = new JSEncrypt();
+    const key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAroJg9ywNPr+eQEeldO0Nw1OZZsb92edv4zYN1W10NKfo4pQGl4fFss24LuhHxMtikwjZk0QVTjM5zEZVHSPzzqSqIWMRY0ClKj5bzg//cCCNklg9dWblSBllrU6V6URODJGfm2Pf9Jo4rfzusKWe5P0DVXHcH6QbaEXouh60/dGnEZgTLR+czcDv7iefUDLBRImNeXzq9StVJR97kiSOSpvKoj3tyEjknE7zZ9mLZUBWSDqp2myZw4pnTF6jyFCPQKz209/5NJjSlb3HSGmxM0hPWubuUrNKjkSDeU7mGB3zqDE6z6+oZk5GnGtY+L1H/gcmLK7DpDUUdxlzTld9OwIDAQAB";
+    jsEncrypt.setPublicKey(key);
+    $("#md5-password").val(jsEncrypt.encrypt($("#password").val()));
     return true;
 }
